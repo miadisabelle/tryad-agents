@@ -1,11 +1,11 @@
 {
-  "name": "coaia-gemini-mcp-tool",
-  "version": "3.0.0",
-  "description": "MCP server for Gemini CLI integration with creative process support based on Robert Fritz's framework",
+  "name": "tryad-agents",
+  "version": "1.0.0",
+  "description": "Collaborative AI Agent System implementing the Mia-Ripple-Miette Tryad for Structure → Essence → Meaning transformation",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "coaia-gemini-mcp": "dist/index.js"
+    "tryad-agents": "dist/index.js"
   },
   "scripts": {
     "build": "tsc && chmod +x dist/index.js",
@@ -22,14 +22,16 @@
   "keywords": [
     "mcp",
     "modelcontextprotocol",
-    "gemini",
-    "cli",
-    "ai",
-    "llm",
-    "creative-process",
-    "robert-fritz",
-    "structural-tension",
-    "creative-orientation"
+    "ai-agents",
+    "collaborative-ai",
+    "tryad",
+    "structural-thinking",
+    "resonant-design",
+    "mia-ripple-miette",
+    "essence-distillation",
+    "creative-orientation",
+    "trading-automation",
+    "multi-agent-system"
   ],
   "author": "coaia",
   "license": "MIT",
