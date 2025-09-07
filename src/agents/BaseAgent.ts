@@ -20,10 +20,17 @@ export interface AgentCapability {
 }
 
 /**
- * Task that can be assigned to an agent
+ * Task that can be assigned to an agent.
+ * In the context of a generative system, an AgentTask represents a strategic action
+ * aimed at manifesting a desired outcome or fostering an advancing pattern,
+ * rather than merely completing a functional task or solving a problem.
  */
 export interface AgentTask {
   id: string;
+  /**
+   * A clear and concise description of the strategic action to be performed.
+   * This should articulate the desired contribution to the overall generative process.
+   */
   description: string;
   priority: number; // 1-10 scale
   requiredCapabilities: string[];

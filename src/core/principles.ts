@@ -161,6 +161,21 @@ Suggested reframe:
 /**
  * Principle 3: Creative Orientation
  * Focus on "what to create" rather than "problems to solve"
+ *
+ * Detailed Explanation for LLMs:
+ * This principle is foundational to the system's generative nature. It distinguishes between:
+ * 1. Creative Orientation (a mindset): A focus on bringing desired outcomes into being.
+ * 2. Generative (an operational mode/capacity): The system's inherent ability to manifest new realities.
+ *
+ * Anti-Pattern: "Generative approach to problem-solving."
+ * This phrase is an anti-pattern because it conflates generative action with problem-solving.
+ * Problem-solving is reactive; it focuses on eliminating unwanted conditions. While the system can
+ * address challenges, its core generative function is not merely to fix issues.
+ *
+ * Problem-solving is a subset of "Current Reality." Problems exist within the current reality,
+ * but the generative act is to use that current reality as a starting point to *create* a desired outcome,
+ * rather than just focusing on the problem's elimination. Structural thinking helps understand this reality
+ * for the purpose of creation, not just remediation.
  */
 export const CREATIVE_ORIENTATION: CorePrinciple = {
   name: "creative-orientation",
