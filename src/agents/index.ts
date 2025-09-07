@@ -10,6 +10,9 @@ export * from './OrchestratorAgent.js';
 export * from './AnalysisAgent.js';
 export * from './CreativeAgent.js';
 export * from './DiscoveryAgent.js';
+export * from './MiaAgent.js';
+export * from './RippleAgent.js';
+export * from './MietteAgent.js';
 
 // Agent registry for easy access
 import { BaseAgent } from './BaseAgent.js';
@@ -17,6 +20,9 @@ import { OrchestratorAgent } from './OrchestratorAgent.js';
 import { AnalysisAgent } from './AnalysisAgent.js';
 import { CreativeAgent } from './CreativeAgent.js';
 import { DiscoveryAgent } from './DiscoveryAgent.js';
+import { MiaAgent } from './MiaAgent.js';
+import { RippleAgent } from './RippleAgent.js';
+import { MietteAgent } from './MietteAgent.js';
 
 /**
  * Agent factory for creating agent instances
@@ -27,7 +33,7 @@ export class AgentFactory {
   /**
    * Create or get an agent instance
    */
-  static getAgent(type: 'orchestrator' | 'analysis' | 'creative' | 'discovery'): BaseAgent {
+  static getAgent(type: 'orchestrator' | 'analysis' | 'creative' | 'discovery' | 'mia' | 'ripple' | 'miette'): BaseAgent {
     const existingAgent = this.agents.get(type);
     if (existingAgent) {
       return existingAgent;
@@ -47,6 +53,15 @@ export class AgentFactory {
         break;
       case 'discovery':
         agent = new DiscoveryAgent();
+        break;
+      case 'mia':
+        agent = new MiaAgent();
+        break;
+      case 'ripple':
+        agent = new RippleAgent();
+        break;
+      case 'miette':
+        agent = new MietteAgent();
         break;
       default:
         throw new Error(`Unknown agent type: ${type}`);
@@ -77,6 +92,17 @@ export class AgentFactory {
     orchestrator.registerAgent(discoveryAgent);
     
     return orchestrator;
+  }
+
+  /**
+   * Initialize Tryad Flow with Mia-Ripple-Miette agents
+   */
+  static initializeTryadFlow(): { mia: MiaAgent; ripple: RippleAgent; miette: MietteAgent; } {
+    const mia = this.getAgent('mia') as MiaAgent;
+    const ripple = this.getAgent('ripple') as RippleAgent;
+    const miette = this.getAgent('miette') as MietteAgent;
+    
+    return { mia, ripple, miette };
   }
   
   /**
