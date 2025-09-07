@@ -9,6 +9,7 @@ import { constitutionalAnalysisTool } from './constitutional-analysis.tool.js';
 import { agenticAnalysisTool } from './agentic-analysis.tool.js';
 import { resilientCoordinationTool } from './resilient-coordination.tool.js';
 import { systemIntegrationTool } from './system-integration.tool.js';
+import { tryadCollaborationTool } from './tryad-collaboration.tool.js';
 
 toolRegistry.push(
   askGeminiTool,
@@ -20,7 +21,8 @@ toolRegistry.push(
   constitutionalAnalysisTool,
   agenticAnalysisTool,
   resilientCoordinationTool,
-  systemIntegrationTool
+  systemIntegrationTool,
+  tryadCollaborationTool
 );
 
 export * from './registry.js';
