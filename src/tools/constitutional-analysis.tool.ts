@@ -3,7 +3,7 @@ import { UnifiedTool } from './registry.js';
 import { getVortexCore, VORTEX_CORE } from '../core/index.js';
 
 const constitutionalAnalysisSchema = z.object({
-  query: z.string().min(1).describe("What would you like me to analyze with constitutional principles in mind?"),
+  query: z.string().min(1).describe("What creative endeavor or challenge would you like me to analyze with constitutional principles in mind?"),
   showAudit: z.boolean().default(false).describe("Show constitutional audit trail"),
   showStats: z.boolean().default(false).describe("Show principle compliance statistics")
 });

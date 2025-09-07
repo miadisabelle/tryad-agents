@@ -307,6 +307,7 @@ export class MietteAgent extends BaseAgent {
    */
   
   private async weaveStoryCore(structure: string, essence?: string): Promise<string> {
+    // These story elements could be dynamically generated or influenced by the input/context
     const storyElements = {
       beginning: `Once upon a time, there was a beautiful challenge...`,
       middle: `And then something wonderful happened...`,

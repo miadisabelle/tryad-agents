@@ -234,7 +234,7 @@ export class ResilienceManager {
   }
   
   /**
-   * Generate goal-directed agent assignments
+   * Generate goal-directed agent assignments, prioritizing efficient creation of the primary goal.
    */
   private generateGoalDirectedAssignments(context: CoordinationContext): Map<string, AgentTask[]> {
     const assignments = new Map<string, AgentTask[]>();
@@ -262,7 +262,7 @@ export class ResilienceManager {
   }
   
   /**
-   * Generate exploratory agent assignments
+   * Generate exploratory agent assignments, aiming to generate novel possibilities and uncover new creative pathways.
    */
   private generateExploratoryAssignments(context: CoordinationContext): Map<string, AgentTask[]> {
     const assignments = new Map<string, AgentTask[]>();
@@ -308,7 +308,7 @@ export class ResilienceManager {
   }
   
   /**
-   * Generate balanced agent assignments
+   * Generate balanced agent assignments, aiming to balance reliable creation with creative exploration.
    */
   private generateBalancedAssignments(
     context: CoordinationContext, 
@@ -357,7 +357,7 @@ export class ResilienceManager {
   }
   
   /**
-   * Generate adaptive agent assignments
+   * Generate adaptive agent assignments, aiming to dynamically adapt its creative approach based on emerging information.
    */
   private generateAdaptiveAssignments(
     context: CoordinationContext, 

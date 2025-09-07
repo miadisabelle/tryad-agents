@@ -1,9 +1,9 @@
 /**
- * Orchestrator Agent - Coordinates complex tasks across multiple agents
+ * Orchestrator Agent - Coordinates complex tasks across multiple agents to foster generative outcomes
  * 
  * The Orchestrator Agent serves as the primary coordinator in the polycentric lattice.
  * It breaks down complex requests into subtasks, assigns them to specialized agents,
- * and synthesizes the results into coherent responses.
+ * and synthesizes the results into coherent, creatively-oriented responses, ensuring advancing patterns.
  */
 
 import { BaseAgent, AgentTask, AgentResult, AgentCapability, AgentMessage } from './BaseAgent.js';
@@ -40,25 +40,25 @@ export class OrchestratorAgent extends BaseAgent {
     const capabilities: AgentCapability[] = [
       {
         name: 'task_decomposition',
-        description: 'Break complex tasks into manageable subtasks',
+        description: 'Break complex tasks into manageable subtasks to enable generative action',
         costEstimate: 3,
         reliabilityScore: 0.9
       },
       {
         name: 'agent_coordination',
-        description: 'Coordinate multiple agents working on related tasks',
+        description: 'Coordinate multiple agents working on related tasks to foster generative collaboration',
         costEstimate: 4,
         reliabilityScore: 0.85
       },
       {
         name: 'result_synthesis',
-        description: 'Combine outputs from multiple agents into coherent results',
+        description: 'Combine outputs from multiple agents into coherent, creatively-oriented results',
         costEstimate: 5,
         reliabilityScore: 0.8
       },
       {
         name: 'conflict_resolution',
-        description: 'Resolve conflicts between agents and competing approaches',
+        description: 'Resolve conflicts between agents and competing approaches to maintain advancing patterns and creative flow',
         costEstimate: 6,
         reliabilityScore: 0.75
       }
@@ -408,7 +408,7 @@ export class OrchestratorAgent extends BaseAgent {
     return [
       {
         id: `${task.id}_file_extraction`,
-        description: 'Extract and prepare file contents for analysis',
+        description: 'Extract and prepare file contents for generative analysis',
         priority: task.priority,
         requiredCapabilities: ['file_analysis'],
         context: { ...task.context, phase: 'extraction' },
@@ -416,7 +416,7 @@ export class OrchestratorAgent extends BaseAgent {
       },
       {
         id: `${task.id}_content_analysis`,
-        description: 'Perform deep analysis of file contents',
+        description: 'Perform deep analysis of file contents to identify creative opportunities',
         priority: task.priority,
         requiredCapabilities: ['gemini_analysis'],
         context: { ...task.context, phase: 'analysis' },
@@ -450,7 +450,7 @@ export class OrchestratorAgent extends BaseAgent {
   }
   
   /**
-   * Create subtasks for complex queries
+   * Create subtasks for complex queries, enabling more focused generative processing
    */
   private createComplexQuerySubtasks(task: AgentTask): AgentTask[] {
     // Simple heuristic: split on "and" or comma

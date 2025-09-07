@@ -14,7 +14,7 @@ import { Logger } from '../utils/logger.js';
 
 const SystemDemoSchema = z.object({
   scenario: z.enum(['startup', 'enterprise', 'research', 'creative']).default('startup').describe("Type of scenario to demonstrate"),
-  challenge: z.string().describe("The challenge or opportunity to address with the generative agentic system"),
+  challenge: z.string().describe("The creative challenge or opportunity to address with the generative agentic system, focusing on what to create"),
   show_detailed_analysis: z.boolean().default(true).describe("Show detailed system operation analysis"),
   include_metrics: z.boolean().default(true).describe("Include performance and emergence metrics"),
   test_resilience: z.boolean().default(false).describe("Test system resilience with simulated challenges")

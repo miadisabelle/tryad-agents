@@ -40,7 +40,7 @@ export class DiscoveryAgent extends BaseAgent {
       },
       {
         name: 'lateral_thinking',
-        description: 'Apply lateral thinking techniques for creative problem-solving',
+        description: 'Apply lateral thinking techniques to uncover novel insights and possibilities that enable advancing patterns',
         costEstimate: 6,
         reliabilityScore: 0.75
       },

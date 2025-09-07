@@ -15,7 +15,7 @@ import { Logger } from '../utils/logger.js';
  */
 
 const TryadCollaborationSchema = z.object({
-  input: z.string().describe("The challenge, question, or problem to transform through the Tryad flow"),
+  input: z.string().describe("The challenge, question, or opportunity to creatively transform through the Tryad flow, focusing on what to bring into being"),
   complexity_level: z.enum(['low', 'medium', 'high', 'crisis']).default('medium').describe("Complexity level to adjust agent coordination strategy"),
   focus: z.enum(['analysis', 'creation', 'innovation', 'problem_solving']).default('creation').describe("Focus area to guide the transformation"),
   output_format: z.enum(['narrative', 'technical', 'creative', 'comprehensive']).default('comprehensive').describe("Desired output format")

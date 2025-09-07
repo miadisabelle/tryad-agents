@@ -222,7 +222,7 @@ export const agenticAnalysisTool: UnifiedTool = {
   category: 'gemini',
   
   prompt: {
-    description: "Execute complex tasks through coordinated multi-agent system",
+    description: "Execute complex creative and analytical tasks through a coordinated multi-agent system, fostering generative outcomes.",
     arguments: [
       {
         name: "request",
@@ -299,12 +299,14 @@ export const agenticAnalysisTool: UnifiedTool = {
 
 **Error:** ${error instanceof Error ? error.message : String(error)}
 
-The polycentric agentic lattice encountered an error during execution. This may be due to:
+The polycentric agentic lattice encountered an error during execution. This serves as a navigational cue for improvement rather than a problem to eliminate.
+
+Possible insights from this cue:
 - Agent initialization issues
 - Task complexity exceeding current capabilities
 - Constitutional validation failures
 
-Please try simplifying the request or check the system configuration.`;
+Consider these insights to refine the request or system configuration.`;
     }
   }
 };
