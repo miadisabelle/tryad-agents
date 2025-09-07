@@ -102,7 +102,7 @@ This roadmap transforms the CoAIA Gemini MCP Tool from a reactive, tool-based sy
 #### 4.2 Validation Scenarios
 - [ ] Complex creative projects spanning multiple phases
 - [ ] Large codebase analysis with parallel agent processing
-- [ ] Novel problem-solving requiring exploration and innovation
+- [ ] Novel problem-solving requiring exploration and innovation (we are not problem-solving when it is not needed, we shift orientation to the creation, see `./__llms/*` for more)
 - [ ] Error recovery and principle-based self-correction
 
 ## Implementation Priority Matrix
