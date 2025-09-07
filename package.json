@@ -1,6 +1,6 @@
 {
   "name": "tryad-agents",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collaborative AI Agent System implementing the Mia-Ripple-Miette Tryad for Structure → Essence → Meaning transformation",
   "type": "module",
   "main": "dist/index.js",
